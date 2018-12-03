@@ -1,0 +1,19 @@
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html{
+	font-size: 62.5px;
+}
+
+body{
+	box-sizing: border-box;
+	position: relative;
+}
+.container-page{
+	max-width: 1440px;
+}
