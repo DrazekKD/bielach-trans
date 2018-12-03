@@ -2,6 +2,7 @@
 	position: relative;
 	margin: 0 auto;
 	height: 600px;
+	max-height: 100vh;
 	max-width: 1024px;
 	background: url("../../img/daf-1024x600.jpg") no-repeat top;
 	@media(min-width: 1024px){
@@ -30,7 +31,7 @@
 		background: url("../../img/daf-2880x1800.jpg") no-repeat top;}
 
 	background-size: cover;
-	filter: brightness(50%);
+	filter: brightness(80%);
 
 
 	.poligon {
@@ -40,8 +41,15 @@
 		clip-path: polygon(0% -25%, 0% 100%, 61% 110%);
 	}
 
+}
 
-
-
+.welcome-section-header {
+	filter: none;
+	position: absolute;
+bottom: 100px;
+	font-size: 40px;
+	letter-spacing: 3px;
+	font-weight: 700;
+	color: #fff;
 }
 

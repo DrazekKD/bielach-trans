@@ -35,12 +35,18 @@
 		position: relative;
 		font-size: 18px;
 		z-index: 9;
+		font-weight: 700;
+		letter-spacing: 0.8px;
+		&:hover {
+			color: #fff;
+		}
 	}
 }
 
 a.active {
-	background-color: rgba(35,66,108,0.8);
+	background-color: #032D70;
 	pointer-events: none;
+	color: #fff;
 }
 
 li.slider {
@@ -49,7 +55,7 @@ li.slider {
 	position: absolute;
 	left: 0;
 	top: 0;
-	background-color: #0655d3;
+	background-color: #04337F;
 	z-index: 8;
 	transition: left .4s, background-color  4s;
 }
@@ -69,7 +75,7 @@ li.slider {
 .menu li:nth-child(2):active {
 	& ~ .slider {
 		left: 25%;
-		background-color: #9b59b6;
+		background-color: #075CE5;
 	}
 }
 
@@ -78,7 +84,7 @@ li.slider {
 .menu li:nth-child(3):active {
 	& ~ .slider {
 		left: 50%;
-		background-color: #e67e22;
+		background-color: #0655D3;
 	}
 }
 
@@ -87,6 +93,6 @@ li.slider {
 .menu li:nth-child(4):active {
 	& ~ .slider {
 		left: 75%;
-		background-color: #16a085;
+		background-color: #0767FF;
 	}
 }
