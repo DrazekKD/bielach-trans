@@ -1,27 +1,33 @@
 .navigation{
 	position: absolute;
-	width: 60%;
+	width: 80%;
 	height: 100%;
-	top: 20px;
+	margin: 0 auto;
+	top: 25px;
+	left: 0;
 	right: 0;
 }
 .menu {
+	filter: brightness(120%) !important;
 	list-style: none;
-	margin: 0;
+	margin: 0 auto;
 	padding: 0;
 	width: 100%;
+	max-width: 1366px;
 	height: 70px;
-	margin: auto;
 	position: relative;
 	background-color: #fff;
 	z-index: 7;
+	box-shadow: 0 2px 6px #ccc;
 
 	li {
 		float: left;
-		width: 25%;
+		width: 33%;
 		height: 100%;
 		margin: 0;
 		padding: 0;
+		display: flex;
+		align-items: center;
 	}
 
 	a {
@@ -30,43 +36,46 @@
 		height: 100%;
 		justify-content: center;
 		align-items: center;
-		color: #696969;
+		color: $TextColor;
 		text-decoration: none;
 		position: relative;
-		font-size: 18px;
+		font-size: 13px;
 		z-index: 9;
 		font-weight: 700;
 		letter-spacing: 0.8px;
+		margin: auto 0;
 		&:hover {
 			color: #fff;
 		}
 	}
+	.navigation-logo-conatiner {
+		display: none;
+	}
 }
+.navigation-logo {
+	height: 100%;
+	width: 70%;
+	margin: 0 auto;
 
+}
 a.active {
-	background-color: #032D70;
 	pointer-events: none;
-	color: #fff;
+	&:hover {
+		color: #fff;
+	}
 }
 
 li.slider {
-	width: 25%;
+	width: 34%;
 	height: 100%;
 	position: absolute;
-	left: 0;
+	left: 33%;
 	top: 0;
-	background-color: #04337F;
+	background-color: #fff;
 	z-index: 8;
-	transition: left .4s, background-color  4s;
-}
+	transition: left .4s, background-color  1s;
+	//background-image: linear-gradient(to right top, #0655d3, #1a5fd4, #2969d5, #3873d5, #467cd4);
 
-.menu li:nth-child(1):hover,
-.menu li:nth-child(1):focus,
-.menu li:nth-child(1):active {
-	& ~ .slider {
-		left: 0;
-		background-color: transparent;
-	}
 }
 
 
@@ -74,8 +83,9 @@ li.slider {
 .menu li:nth-child(2):focus,
 .menu li:nth-child(2):active {
 	& ~ .slider {
-		left: 25%;
-		background-color: #075CE5;
+		left: 0%;
+		background-image: linear-gradient(to right top, #0655d3, #1a5fd4, #2969d5, #3873d5, #467cd4);
+		//background-color: $PrimaryColor;
 	}
 }
 
@@ -83,8 +93,9 @@ li.slider {
 .menu li:nth-child(3):focus,
 .menu li:nth-child(3):active {
 	& ~ .slider {
-		left: 50%;
-		background-color: #0655D3;
+		left: 33%;
+		background-image: linear-gradient(to right top, #0655d3, #1a5fd4, #2969d5, #3873d5, #467cd4);
+		//background-color: $PrimaryColor;
 	}
 }
 
@@ -92,7 +103,8 @@ li.slider {
 .menu li:nth-child(4):focus,
 .menu li:nth-child(4):active {
 	& ~ .slider {
-		left: 75%;
-		background-color: #0767FF;
+		left: 66%;
+		background-image: linear-gradient(to right top, #0655d3, #1a5fd4, #2969d5, #3873d5, #467cd4);
+		//background-color: $PrimaryColor;
 	}
 }

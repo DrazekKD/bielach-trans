@@ -1,15 +1,16 @@
 // FONT
 $default-font-size: 1.6rem;
+$PrimaryColor: #0655D3;
+$PrimaryColorLight: #467CD4;
+$TextColor: #696969;
+
+$mobile-xs : 320px;
+$mobile-s : 480px;
+$mobile : 768px;
+$tablet-s : 990px;
+$tablet: 1050px;
+$desktop-xs: 1150px;
+$desktop-s: 1170px;
+$desktop: 1366px;
 
 
-$breakpoints: (
-	'mobile-xs' : 320px,
-	'mobile-s' : 480px,
-	'mobile' : 768px,
-	'tablet-xs' : 768px,
-	'tablet-s' : 990px,
-	'tablet' : 1050px,
-	'desktop-xs' : 1150px,
-	'desktop-s' : 1170px,
-	'desktop' : 1366px,
-)

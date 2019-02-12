@@ -1,0 +1,82 @@
+.contact-section {
+	.contact-wrapper{
+		display: flex;
+		flex-direction: column;
+
+		@media (min-width: $mobile) {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+		}
+		.contact-element_1 {
+			background: url("../../img/rawpixel-558597-unsplash.jpg");
+		}
+		.contact-element_2 {
+			background: url("../../img/firdouss-ross-564937-unsplash.jpg");
+		}
+		.contact-element_1,.contact-element_2 {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			width: 100%;
+			height: 20vh;
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+			color: #fff;
+			background-color: #9B9898;
+			background-blend-mode: multiply;
+			padding: 5px;
+			@media (min-width: $mobile) {
+				height: 50vh;
+				width: 50%;
+			}
+			&:hover{
+				background-color: #6D94D8;
+			}
+
+		}
+		.contact-element-text {
+			h3 {
+				text-align: center;
+				padding-bottom: 5px;
+			}
+			p{
+				text-align: justify;
+				padding: 0 5%;
+			}
+		}
+
+		.contact-element_3 {
+			width: 100%;
+			height: 20vh;
+			background-image: linear-gradient(to right bottom, rgba(2,113,226,0.8), rgba(2, 113, 224, 2.8));
+			text-align: center;
+			color: #fff;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			@media (min-width: $mobile) {
+				height: 50vh;
+			}
+			h3 {
+				margin-bottom: 10px;
+			}
+			.contact-container{
+				width: 90%;
+				height: 160px;
+				background: #fff;
+				box-shadow: 0 3px 15px rgba(0,0,0,0.2);
+			}
+			#map {
+				width: 100%;
+				height: 20vh;
+				background-color: grey;
+				@media (min-width: $mobile) {
+					height: 50vh;
+				}
+			}
+		}
+
+	}
+}

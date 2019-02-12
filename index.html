@@ -8,25 +8,102 @@
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&amp;subset=latin-ext" rel="stylesheet">
 	<link rel="stylesheet" href="css/main.css">
 	<title>Document</title>
+	<script>
+		// Initialize and add the map
+		function initMap() {
+			// The location of Uluru
+			var uluru = {lat: 50.37883, lng: 19.7555973};
+			// The map, centered at Uluru
+			var map = new google.maps.Map(
+				document.getElementById('map'), {zoom: 10, center: uluru});
+			// The marker, positioned at Uluru
+			var marker = new google.maps.Marker({position: uluru, map: map});
+		}
+	</script>
+	<!--Load the API from the specified URL
+	* The async attribute allows the browser to render the page while the API loads
+	* The key parameter will contain your own API key (which is not needed for this tutorial)
+	* The callback parameter executes the initMap() function
+	-->
+	<script async defer
+			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDB-i3zgQNl4Rp8TsO7nuNjffsNLKBvuEM&callback=initMap">
+	</script>
 </head>
 <body>
-	<section class="welcome-section">
-		<div class="poligon">
+	<main>
+		<section class="welcome-section">
+			<header>
+				<h1 class="welcome-section-header">Firma Transportowo Handlowa Grzegorz Bielach</h1>
+				<div class="phone-number-container">
+					<a href="" class="phone-number-link"><img src="./img/phone-receiver.svg" alt="">668-038-098</a>
+				</div>
+				<nav class="navigation effect">
+					<ul class="menu">
+						<li class="navigation-logo-conatiner"><img src="./img/Disney_Blu-ray_-_logo.png" alt="" class="navigation-logo"></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Portfolio</a></li>
+						<li><a href="#">Contact</a></li>
+						<li class="slider"></li>
+					</ul>
+				</nav>
+			</header>
+			<div class="poligon">
+			</div>
+		</section>
+	</main>
+	<section class="about-company">
+		<h2 class="about-company-header">Lorem ipsum dolor sit amet, consectetur adipisicing.</h2>
+		<div class="about-company-items">
+			<div class="about-company-item">
+				<div class="about-company-item-img about-company-item-img-1"></div>
+				<div class="about-company-item-text">
+					<h3 class="about-company-item-text-header"> Już od 18 lat na rynku</h3>
+					<p class="about-company-item-text-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum eum eveniet expedita fugiat laborum nemo nihil quidem, quos repellendus similique.</p>
+				</div>
+			</div>
+			<div class="about-company-item">
+				<div class="about-company-item-img about-company-item-img-2"></div>
+				<div class="about-company-item-text">
+					<h3 class="about-company-item-text-header"> Już od 18 lat na rynku</h3>
+					<p class="about-company-item-text-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum eum eveniet expedita fugiat laborum nemo nihil quidem, quos repellendus similique.</p>
+				</div>
+			</div>
+			<div class="about-company-item">
+				<div class="about-company-item-img about-company-item-img-3"></div>
+				<div class="about-company-item-text">
+					<h3 class="about-company-item-text-header"> Już od 18 lat na rynku</h3>
+					<p class="about-company-item-text-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum eum eveniet expedita fugiat laborum nemo nihil quidem, quos repellendus similique.</p>
+				</div>
+			</div>
+			<div class="about-company-item">
+				<div class="about-company-item-img about-company-item-img-4"></div>
+				<div class="about-company-item-text">
+					<h3 class="about-company-item-text-header"> Już od 18 lat na rynku</h3>
+					<p class="about-company-item-text-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum eum eveniet expedita fugiat laborum nemo nihil quidem, quos repellendus similique.</p>
+				</div>
+			</div>
 		</div>
 	</section>
-	<header>
-		<h1 class="welcome-section-header">Firma Transportowo-Handlowa Grzegorz Bielach</h1>
-		<nav class="navigation">
-			<ul class="menu">
-				<li><a href="#" class="active">Home</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Portfolio</a></li>
-				<li><a href="#">Contact</a></li>
-				<li class="slider"></li>
-			</ul>
-		</nav>
-	</header>
-	<div class="container-page">
-	</div>
+	<section class="contact-section">
+		<div class="contact-wrapper">
+			<div class="contact-element_1">
+				<div class="contact-element-text">
+					<h3>Lorem ipsum dolor.</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A consectetur eos incidunt minima numquam perspiciatis repellendus sed vero voluptatem voluptates?</p>
+				</div>
+			</div>
+			<div class="contact-element_2">
+				<div class="contact-element-text">
+					<h3>Lorem ipsum dolor sit amet.</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque cumque deserunt earum eligendi iusto minima molestias odio pariatur placeat quibusdam saepe similique, vel vitae voluptatibus!</p>
+				</div>
+			</div>
+			<div class="contact-element_3">
+				<div  id="map">
+
+				</div>
+			</div>
+		</div>
+	</section>
 </body>
 </html>
