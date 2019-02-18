@@ -28,11 +28,11 @@
 	}
 	.welcome-section-header{
 		position: absolute;
-		color: #fff;
-		font-size: 28px;
-		top: 75%;
-		left: 10%;
 		z-index: 2;
+		left: 10%;
+		top: 75%;
+		font-size: 28px;
+		color: #fff;
 		@media (min-width: $mobile-s) {
 			max-width: 5rem
 		}
@@ -47,13 +47,13 @@
 		z-index: 10;
 		right: 10%;
 		.phone-number-link{
+			text-decoration: none;
 			font-size: .2rem;
 			color: #fff;
-			text-decoration: none;
 			img{
-				margin-right: 5px;
 				height: .2rem;
 				width: .2rem;
+				margin-right: 5px;
 			}
 		}
 	}
