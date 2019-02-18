@@ -1,0 +1,23 @@
+.footer-section{
+	background: $PrimaryColorDark;
+	color: #fff;
+	font-size: 15px;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	@media (min-width: $desktop-xs) {
+		flex-direction: row;
+	}
+	a {
+		text-decoration: none;
+		color: $PrimaryColor;
+		@media (min-width: $desktop-xs) {
+			padding-left: 10px;
+		}
+	}
+	span{
+		@media (min-width: $desktop-xs) {
+			padding-left: 30px;
+		}
+	}
+}
