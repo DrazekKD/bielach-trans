@@ -1,11 +1,12 @@
 .about-company {
 	max-width: 1366px;
 	margin: 40px auto;
+	color: #1A2D43;
 	//background-image: linear-gradient(to right top, #0655d3, #1a5fd4, #2969d5, #3873d5, #467cd4);
 	&-header {
 		margin-bottom: 40px;
 		font-size: 30px;
-		font-weight: 400;
+		font-weight: 600;
 		text-align: center;
 	}
 	&-items {
@@ -21,9 +22,13 @@
 		justify-content: center;
 		margin-top: 30px;
 		max-width: 280px;
+		min-width: 100%;
 		@media (min-width: $mobile) {
-			margin: 80px 20px;
-
+			margin: 40px 0;
+			min-width: 50%;
+		}
+		@media (min-width: $tablet) {
+			min-width: 25%;
 		}
 		&-img {
 			width: 160px;
@@ -49,9 +54,15 @@
 			flex-direction: column;
 			align-items: center;
 			justify-content: center;
+			text-align: center;
+			max-width: 300px;
 			&-header {
-				margin: 15px 0;
+				//margin: 15px 0;
 				font-size: 25px;
+				min-height: 60px;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
 			}
 			&-description {
 				margin: 5px 15px;

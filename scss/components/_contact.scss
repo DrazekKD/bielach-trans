@@ -23,7 +23,7 @@
 	padding: 10px;
 	border-radius: 50%;
 	border: solid 3px $PrimaryColor;
-
+	transition: 1.5s;
 	.contact-icon {
 		width: 50px;
 		margin: 0 auto;
@@ -52,7 +52,9 @@
 					&:hover{
 						.contact-data-list-item-text{
 							color: $PrimaryColor;
-
+						}
+						.contact-icon-wrapper{
+							border-color: #fff;
 						}
 					}
 				}
@@ -112,6 +114,9 @@
 			transition: 0.3s;
 			&:hover{
 				color: $PrimaryColor;
+				.contact-icon-wrapper{
+					border-color: #fff;
+				}
 			}
 			&-text {
 				flex-grow: 2;
