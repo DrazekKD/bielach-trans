@@ -12,7 +12,8 @@
   "author": "Drazek",
   "license": "ISC",
   "dependencies": {
-    "gulp-wait": "0.0.2"
+    "gulp-wait": "0.0.2",
+    "jq-fakeloader": "^2.0.1"
   },
   "devDependencies": {
     "browser-sync": "^2.18.13",
