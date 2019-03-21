@@ -2,6 +2,9 @@
 	max-width: 1366px;
 	margin: 40px auto;
 	color: #1A2D43;
+	@media (min-width: $desktop-xs) {
+		margin: 80px auto;
+	}
 	//background-image: linear-gradient(to right top, #0655d3, #1a5fd4, #2969d5, #3873d5, #467cd4);
 	&-header {
 		margin-bottom: 40px;
