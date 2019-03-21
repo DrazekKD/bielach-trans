@@ -1,12 +1,15 @@
 .contact-section {
 	background-color: $DarkBackground;
+	@media (min-width: $desktop-xs) {
+		padding: 60px 0;
+	}
 	.contact-section-wrapper{
 		max-width: 1366px;
 		margin: 0 auto;
 	}
 }
 .contact-header{
-	padding: 30px;
+	padding-bottom: 50px;
 	color: #fff;
 	text-align: center;
 	font-size: 25px;

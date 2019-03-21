@@ -11,13 +11,17 @@
 	<script>
 		// Initialize and add the map
 		function initMap() {
+			const icon = {
+				url: "./img/Disney_Blu-ray_-_logo.png",
+				scaledSize: new google.maps.Size(70, 70), // scaled size
+			};
 			// The location of Uluru
 			var uluru = {lat: 50.37883, lng: 19.7555973};
 			// The map, centered at Uluru
 			var map = new google.maps.Map(
 				document.getElementById('map'), {zoom: 10, center: uluru});
 			// The marker, positioned at Uluru
-			var marker = new google.maps.Marker({position: uluru, map: map});
+			var marker = new google.maps.Marker({position: uluru, map: map,icon: icon});
 		}
 	</script>
 	<!--Load the API from the specified URL
@@ -32,24 +36,14 @@
 	<script async defer
 			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDB-i3zgQNl4Rp8TsO7nuNjffsNLKBvuEM&callback=initMap">
 	</script>
-	<script type="text/javascript">
-		$(window).load(function() {
-			$('#loading').fadeOut(1000);
-			$('#page_effect').fadeIn(4000);
-		});
-
-	</script>
 </head>
 <body>
-	<div id="loading">
-		<img class="logo" src="img/logo_white.png" alt="">
-	</div>
-	<div id="page_effect" style="display: none">
+	<div id="page_effect">
 	<main>
 		<section class="welcome-section">
 			<header>
 				<div class="welcome-section-info-wrapper">
-					<img class="welcome-section-logo" src="img/logo_whiteC.png" alt="">
+					<img class="welcome-section-logo" src="./img/logo_whiteC.png" alt="">
 					<a href="" class="phone-number-link"><img src="./img/phone-receiver.svg" alt="">668-038-098</a>
 				</div>
 				<nav class="navigation effect">
@@ -154,6 +148,26 @@
 		<div class="management-data">
 			<h3 class="contact-header">Nasz zespół</h3>
 			<ul class="management-data-list">
+				<li class="management-data-list-item">
+					<div class="person-data">
+						<p class="person-data-name">Aneta Bielach</p>
+						<p class="person-data-position">Właścicielka</p>
+					</div>
+					<div class="person-contact">
+						<a href="" class="person-contact-link">
+							<div class="contact-icon-wrapper">
+								<img src="./img/envelope.svg" alt="" class="contact-icon">
+							</div>
+							<p class="person-contact-link-text">drazek3850@gmail.com</p>
+						</a>
+						<a href="" class="person-contact-link">
+							<div class="contact-icon-wrapper">
+								<img src="./img/phone-receiver.svg" alt="" class="contact-icon">
+							</div>
+							<p class="person-contact-link-text">668-038-502</p>
+						</a>
+					</div>
+				</li>
 				<li class="management-data-list-item">
 					<div class="person-data">
 						<p class="person-data-name">Grzegorz Bielach</p>
