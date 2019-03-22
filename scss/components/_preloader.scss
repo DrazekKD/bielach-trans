@@ -1,0 +1,23 @@
+#preloader {
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	z-index: 1000;
+	position: absolute;
+	.preloader-wrapper{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		height: 100vh;
+		.preloader-logo{
+			height: 200px;
+			width: 116px;
+			transition: all .4s ease-in;
+		}
+		.fullSize {
+			height: 400px;
+			width: 232px;
+		}
+	}
+}
