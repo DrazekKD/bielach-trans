@@ -7,6 +7,7 @@
 	flex-direction: column;
 	@media (min-width: $desktop-xs) {
 		flex-direction: row;
+		justify-content: space-between;
 	}
 	a {
 		text-decoration: none;
@@ -19,5 +20,10 @@
 		@media (min-width: $desktop-xs) {
 			padding-left: 30px;
 		}
+	}
+	.footer-section-logo {
+		height: 30px;
+		width: 200px;
+
 	}
 }

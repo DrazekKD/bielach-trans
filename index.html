@@ -12,7 +12,7 @@
 		// Initialize and add the map
 		function initMap() {
 			const icon = {
-				url: "./img/Disney_Blu-ray_-_logo.png",
+				url: "./img/logo_whiteC.png",
 				scaledSize: new google.maps.Size(70, 70), // scaled size
 			};
 			// The location of Uluru
@@ -22,6 +22,7 @@
 				document.getElementById('map'), {zoom: 10, center: uluru});
 			// The marker, positioned at Uluru
 			var marker = new google.maps.Marker({position: uluru, map: map,icon: icon});
+
 		}
 	</script>
 	<!--Load the API from the specified URL
@@ -212,7 +213,14 @@
 		</div>
 		</div>
 	</section>
-	<footer class="footer-section" id="stopka"><span>Copyright © 2019 by </span><a href="https://www.facebook.com/kamil.drazkiewicz.5" target="_blank" rel="author">Kamil Drążkiewicz</a></footer>
+	<footer class="footer-section" id="stopka">
+		<div>
+			<span>Copyright © 2019 by </span>
+			<a href="https://www.facebook.com/kamil.drazkiewicz.5" target="_blank" rel="author">Kamil Drążkiewicz</a>
+		</div>
+		<img class="footer-section-logo" src="./img/logo_white.png" alt="">
+	
+	</footer>
 	</div>
 		<script src="./js/smoothScroll.js"></script>
 </body>
