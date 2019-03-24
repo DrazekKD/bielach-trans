@@ -31,15 +31,21 @@
 	* The callback parameter executes the initMap() function
 	-->
 	<script
-		src="https://code.jquery.com/jquery-3.3.1.min.js"
+		src="http://code.jquery.com/jquery-3.3.1.min.js"
 		integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
 		crossorigin="anonymous"></script>
+	<script src="./js/preloader.js"></script>
 	<script async defer
 			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDB-i3zgQNl4Rp8TsO7nuNjffsNLKBvuEM&callback=initMap">
 	</script>
 </head>
 <body>
-	<div id="page_effect">
+	<div id="preloader">
+		<div class="preloader-wrapper">
+
+			<img class="preloader-logo" src="./img/shield-light.svg" alt="">
+		</div>
+	</div>
 	<main>
 		<section class="welcome-section">
 			<header>
@@ -219,7 +225,7 @@
 			<a href="https://www.facebook.com/kamil.drazkiewicz.5" target="_blank" rel="author">Kamil Drążkiewicz</a>
 		</div>
 		<img class="footer-section-logo" src="./img/logo_white.png" alt="">
-	
+
 	</footer>
 	</div>
 		<script src="./js/smoothScroll.js"></script>
