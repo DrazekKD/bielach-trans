@@ -8,6 +8,7 @@
 			flex-direction: row;
 			flex-wrap: wrap;
 		}
+
 		.information-element_1 {
 			background: url("../../img/rawpixel-558597-unsplash.jpg");
 		}
@@ -25,7 +26,7 @@
 			color: #fff;
 			background-size: 100% 100%;
 			background-repeat: no-repeat;
-			background-color: #9B9898;
+			background-color: #545454;
 			background-blend-mode: multiply;
 			@media (min-width: $mobile) {
 				height: 30vh;
@@ -41,20 +42,28 @@
 		}
 		.information-element-text {
 			max-width: 480px;
-			h3 {
+
+			.information-element-text-header{
 				padding-bottom: 5px;
 				text-align: center;
+				@media (min-width: $mobile-s) {
+					font-size: 35px;
+				}
 				@media (min-width: $desktop-xs) {
 					font-size: 30px;
 					padding-bottom: 15px;
 				}
 			}
-			p{
+			.information-element-text-description{
 				max-width: 300px;
 				margin: 0 auto;
 				padding: 0 5%;
 				text-align: justify;
 				font-size: 13px;
+				@media (min-width: $mobile-s) {
+					max-width: 400px;
+					font-size: 18px;
+				}
 				@media (min-width: $desktop-xs) {
 				 max-width: 400px;
 					font-size: 16px;

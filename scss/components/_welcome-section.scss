@@ -72,6 +72,7 @@
 			color: #fff;
 			position: relative;
 			max-width: 150px;
+			font-weight: bold;
 			&::before {
 				content: '';
 				position: absolute;
@@ -112,7 +113,7 @@
 		}
 
 		.welcome-section-logo {
-			width: 130px;
+			width: 150px;
 			@media (min-width: $mobile-s) {
 				width: 210px;
 			}
