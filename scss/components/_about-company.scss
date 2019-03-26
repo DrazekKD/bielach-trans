@@ -12,19 +12,8 @@
 		font-weight: 600;
 		text-align: center;
 		position: relative;
-
-
-		&::after{
-			content: '';
-			position: absolute;
-			top: 100%;
-			left: 50%;
-			height: 2px;
-			width: 100%;
-			@
-			background-image: linear-gradient(to right top, #0655d3, #1a5fd4, #2969d5, #3873d5, #467cd4);
-			max-width: 450px;
-		}
+		margin: 0 auto;
+		max-width: 70%;
 	}
 	&-items {
 		display: flex;

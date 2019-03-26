@@ -11,17 +11,13 @@
 	<script>
 		// Initialize and add the map
 		function initMap() {
-			const icon = {
-				url: "./img/logo_whiteC.png",
-				scaledSize: new google.maps.Size(70, 70), // scaled size
-			};
 			// The location of Uluru
 			var uluru = {lat: 50.37883, lng: 19.7555973};
 			// The map, centered at Uluru
 			var map = new google.maps.Map(
 				document.getElementById('map'), {zoom: 10, center: uluru});
 			// The marker, positioned at Uluru
-			var marker = new google.maps.Marker({position: uluru, map: map,icon: icon});
+			var marker = new google.maps.Marker({position: uluru, map: map});
 
 		}
 	</script>
@@ -40,11 +36,11 @@
 	</script>
 </head>
 <body>
-	<!--<div id="preloader">-->
-		<!--<div class="preloader-wrapper">-->
-			<!--<img class="preloader-logo" src="./img/logo_whiteC.png" alt="">-->
-		<!--</div>-->
-	<!--</div>-->
+	<div id="preloader">
+		<div class="preloader-wrapper">
+			<img class="preloader-logo" src="./img/logo_whiteC.png" alt="">
+		</div>
+	</div>
 	<main>
 		<section class="welcome-section">
 			<header>
