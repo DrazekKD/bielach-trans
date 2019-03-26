@@ -49,6 +49,9 @@
 				@media (min-width: $mobile-s) {
 					font-size: 35px;
 				}
+				@media (min-width: $mobile) {
+					font-size: 20px;
+				}
 				@media (min-width: $desktop-xs) {
 					font-size: 30px;
 					padding-bottom: 15px;
@@ -63,6 +66,9 @@
 				@media (min-width: $mobile-s) {
 					max-width: 400px;
 					font-size: 18px;
+				}
+				@media (min-width: $mobile) {
+					font-size: 16px;
 				}
 				@media (min-width: $desktop-xs) {
 				 max-width: 400px;
