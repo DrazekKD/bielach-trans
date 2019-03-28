@@ -1,0 +1,11 @@
+.animation.animate {
+	animation: showinfo 0.1s infinite;
+}
+@keyframes showinfo {
+	0% {
+		display: block;
+	}
+	100% {
+		color: #020d7c;
+	}
+}
